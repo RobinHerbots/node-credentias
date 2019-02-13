@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "bin": "bin/node-credentials.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "ci:store_test_results": "mkdir -p test-results/jest && cp -r coverage/* test-results/jest"
   },
   "repository": "https://github.com/MiguelSavignano/node-credentias",
   "keywords": [
