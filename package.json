@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "test:cov": "jest --coverage",
-    "ci:test:cov": "mkdir -p test-results && JEST_JUNIT_OUTPUT='test-results/jest.xml' jest --coverage"
+    "ci:test:cov": "mkdir -p test-results/jest && JEST_JUNIT_OUTPUT='test-results/jest/results.xml' jest --coverage"
   },
   "repository": "https://github.com/MiguelSavignano/node-credentias",
   "keywords": [
