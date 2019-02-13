@@ -18,7 +18,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package-lock.json" }}
 
-      - run: ci:test:cov
+      - run: npm run ci:test:cov
 
       - store_test_results:
           path: test-results
